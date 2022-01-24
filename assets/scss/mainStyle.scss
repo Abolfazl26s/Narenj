@@ -1,29 +1,29 @@
 
-:root{
-    --primary-fonts:'iranSans' ,
-    --title-fonts:'iranSans',
-}
+// :root{
+//     --primary-fonts:'iranSans' ,
+//     --title-fonts:'iranSans',
+// }
 
-@font-face {
-  font-family: 'iranSans';
-  src: url('../fonts/Iran-sans-fa/fa-Iran-sans-web-bold.woff2'),
-    url('../fonts/Iran-sans-fa/fa-Iran-sans-web-light.woff2');
-}
+// @font-face {
+//   font-family: 'iranSans';
+//   src: url('../fonts/Iran-sans-fa/fa-Iran-sans-web-bold.woff2'),
+//     url('../fonts/Iran-sans-fa/fa-Iran-sans-web-light.woff2');
+// }
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i,800,800i|Poppins:400,400i,600,600i,700,700i,800,800i");
+// @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i,800,800i|Poppins:400,400i,600,600i,700,700i,800,800i");
 
 
 // !======== import shared ========
 
-// Default Css
-@import './shared/default';
+// // Default Css
+// @import './shared/default';
 
-//  Default Margin and Padding
-@import './shared/defaultMarginAndPadding';
+// //  Default Margin and Padding
+// @import './shared/defaultMarginAndPadding';
 
-// Overlay Css
-@import './shared/OverlayCss';
+// // Overlay Css
+// @import './shared/OverlayCss';
 
-// Socal Media
-@import './shared/socalMedia';
+// // Socal Media
+// @import './shared/socalMedia';
 
