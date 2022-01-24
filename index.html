@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <!--===== Meta Tag =====-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Runaway - Personal Portfolio HTML Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords"
+        content="business, agency, blog, cv, creative, html, one page, personal, portfolio, resume, responsive, bootstrap, photography, designer, developer">
+    <meta name="author" content="root">
+
+    <!--	Css Links
+    ==================================================-->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/jquery.pagepiling.css">
+    <link rel="stylesheet" href="./assets/css/all.css" />
+    <link rel="stylesheet" href="./assets/fonts/flaticon.css">
+    <link rel="stylesheet" href="./assets/css/plugins.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/rtl.css">
+    <link rel="stylesheet" href="./assets/css/color.css" id="color-change">
+    <link rel="stylesheet" href="./assets/scss/mainstyle.css">
+
+    <!-- Favicon 
+    ==================================================-->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon.ico">
+
+    <!--	Title
+    ==================================================-->
+    <title>Runaway - محفظة HTML قالب الشخصية </title>
+
+</head>
+
+<body id="top" class="page-load">
+    <!--	Preloader
+	==================================================-->
+    <div class="preloader d-none">
+        <div class="lds-css ng-scope">
+            <div class="lds-spinner" style="width:100%;height:100%">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <!-- Color Settings Start
+	==================================================-->
+    <div class="color-panel">
+        <div class="on-panel color_white bg_primary">
+            <div class="text-center icon-spinner">
+                <i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
+            </div>
+        </div>
+        <div class="panel-box">
+            <span class="panel-title text-right">ألوان الموضوع </span>
+            <ul class="color-box">
+                <li class="default" data-name="default" data-path="css/color.css"
+                    data-image="./assets/images/logo/29.png" data-target="images/logo/29.png"></li>
+                <li class="color_2" data-name="color_2" data-path="css/color/color-1.css"
+                    data-image="./assets/images/logo/30.png" data-target="images/logo/30.png"></li>
+                <li class="color_3" data-name="color_3" data-path="css/color/color-2.css"
+                    data-image="./assets/images/logo/31.png" data-target="images/logo/31.png"></li>
+                <li class="color_4" data-name="color_4" data-path="css/color/color-3.css"
+                    data-image="./assets/images/logo/32.png" data-target="images/logo/32.png"></li>
+                <li class="color_5" data-name="color_5" data-path="css/color/color-4.css"
+                    data-image="./assets/images/logo/33.png" data-target="images/logo/33.png"></li>
+                <li class="color_6" data-name="color_6" data-path="css/color/color-5.css"
+                    data-image="./assets/images/logo/34.png" data-target="images/logo/34.png"></li>
+                <li class="color_7" data-name="color_7" data-path="css/color/color-6.css"
+                    data-image="./assets/images/logo/35.png" data-target="images/logo/35.png"></li>
+                <li class="color_8" data-name="color_8" data-path="css/color/color-7.css"
+                    data-image="./assets/images/logo/36.png" data-target="images/logo/36.png"></li>
+                <li class="color_9" data-name="color_9" data-path="css/color/color-8.css"
+                    data-image="./assets/images/logo/37.png" data-target="images/logo/37.png"></li>
+                <li class="color_10" data-name="color_10" data-path="css/color/color-9.css"
+                    data-image="./assets/images/logo/38.png" data-target="images/logo/38.png"></li>
+                <li class="color_11" data-name="color_11" data-path="css/color/color-10.css"
+                    data-image="./assets/images/logo/39.png" data-target="images/logo/39.png"></li>
+                <li class="color_12" data-name="color_12" data-path="css/color/color-11.css"
+                    data-image="./assets/images/logo/40.png" data-target="images/logo/40.png"></li>
+                <li class="color_13" data-name="color_13" data-path="css/color/color-12.css"
+                    data-image="./assets/images/logo/41.png" data-target="images/logo/41.png"></li>
+                <li class="color_14" data-name="color_14" data-path="css/color/color-13.css"
+                    data-image="./assets/images/logo/42.png" data-target="images/logo/42.png"></li>
+            </ul>
+        </div>
+        <div class="template_style">
+            <span class="layout_title text-right">نمط القالب </span>
+            <ul>
+                <li><a class="btn_link text-right" href="index-1.html" target="blank">نسخة بيضاء </a></li>
+                <li><a class="btn_link text-right" href="index-2.html" target="blank">النسخة السوداء </a></li>
+            </ul>
+        </div>
+    </div>
+    <!--  Color Settings End
+	==============================================-->
+    <!--	Start Sidebar
+	==================================================-->
+    <div id="mysidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="flaticon-close-button"></i></a>
+        <img class="nav-logo" src="./assets/images/logo/29.png" alt="image">
+        <ul id="menu">
+            <li data-menuanchor="page1" class="active"><a href="#page1"> االرئيسية </a></li>
+            <li data-menuanchor="page2"><a href="#page2">حول </a></li>
+            <li data-menuanchor="page3"><a href="#page3"> استئنف </a></li>
+            <li data-menuanchor="page4"><a href="#page4">خدمات </a></li>
+            <li data-menuanchor="page5"><a href="#page5">محفظة </a></li>
+            <li data-menuanchor="page6"><a href="#page6"> التسعير </a></li>
+            <li data-menuanchor="page7"><a href="#page7"> الفريق </a></li>
+            <li data-menuanchor="page8"><a href="#page8">شهادة </a></li>
+            <li data-menuanchor="page9"><a href="#page9"> اتصل </a></li>
+        </ul>
+    </div>
+    <div class="sidebar bg_deepblack">
+        <div class="logo text-center"><a href="#page1"><img class="nav-logo" src="./assets/images/logo/29.png"
+                    alt="logo"></a></div>
+        <span style="cursor:pointer" onclick="openNav()">&#9776;</span>
+        <div class="socal_media mt_60">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-xl fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-xl fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-xl fa-google-plus" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-xl fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-xl fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="contact_massage bg_deepblack">
+        <a href="#page9"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+    </div>
+    <!--	End Sidebar
+	=======================================================-->
+    <div id="pagepiling">
+        <!--	Start Slider
+		===================================================-->
+        <div id="slider" class="section bg_white">
+            <div class="line-container">
+                <div class="row">
+                    <div class="col-md-3 col-lg-3">
+                        <div class="liner"></div>
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                        <div class="liner"></div>
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                        <div class="liner"></div>
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                        <div class="liner"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner overlay_three">
+                    <div class="carousel-item active">
+                        <div class="overlay_one pattan"><img class="" src="./assets/images/slider/01.jpg"
+                                alt="slide image"></div>
+                        <div class="carousel-caption text-right">
+                            <h1 class="mb_20">حل رائع <br> إلى عن على <span class="color_default">أنت الأعمال </span>
+                            </h1>
+                            <p class="mb_20" style="font-size: 2em;">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
+                                و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
+                                متنوع با هدف بهبود ابزارهای
+                                کاربردی می باشد.</p>
+                            <a class="btn btn-default text-right" href="#">مطالعه </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="overlay_one pattan"><img src="./assets/images/slider/02.jpg" alt="slide image">
+                        </div>
+                        <div class="carousel-caption text-right">
+                            <h1 class="mb_20">حل رائع <br> إلى عن على <span class="color_default">أنت الأعمال </span>
+                            </h1>
+                            <p class="mb_20">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                                طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
+                                و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
+                                متنوع با هدف بهبود ابزارهای
+                                کاربردی می باشد. </p>
+                            <a class="btn btn-default text-right" href="#">مطالعه </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="overlay_one pattan"><img src="./assets/images/slider/03.jpg" alt="slide image">
+                        </div>
+                        <div class="carousel-caption text-right">
+                            <h1 class="mb_20">نارنج <br> اول<span class="color_default">عنوان </span>
+                            </h1>
+                            <p class="mb_20"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                                طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
+                                و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
+                                متنوع با هدف بهبود ابزارهای
+                                کاربردی می باشد. </p>
+                            <a class="btn btn-default text-right" href="#">مطالعه </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--	End Slider
+		===================================================-->
+        <!--	Start About
+		===================================================-->
+        <div id="about" class="section bg_black pp-scrollable md_pr_80">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="about2">
+                        <div class="col-md-12 col-lg-12">
+                            <div class="row">
+                                <div class="col-md-12 col-lg-12 col-xl-4">
+                                    <div class="overlay_one"><img src="./assets/images/about/01.jpg" alt="image">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-lg-12 col-xl-8">
+                                    <div class="about_myself pb_60">
+                                        <!--	Start Title
+	    								================================-->
+                                        <div class="main_title my_60 text-right">
+                                            <h2 class="title color_white"> عني </h2>
+                                            <p class=" mt_15 color_lightgray"> أأي فصل بمحاولة التحالف, ثم دون دأبوا
+                                                يتمكن الثقيل. وتم كل ا والفرنسي, لان أم إحتار لإعادة الولايات, لها في.
+                                            </p>
+                                        </div>
+                                        <!--	End Title
+	    								================================-->
+                                        <div class="row">
+                                            <div class="col-md-6 col-lg-6">
+                                                <div class="myself color_secondery text-right">
+                                                    <p>أخذ إحكام وقامت تم. البشريةً التقليدية أما ما. كل الى كانت
+                                                        وتتحمّل. قادة ساعة تشيكوسلوفاكيا قد بال, قد مشروط بالرّغم شيء,
+                                                        إعلان علاقة اوروبا بل ذلك. حتى عل رئيس الأول والعتاد. من بها
+                                                        التحالف الأوضاع,
+                                                        أي جدول لتقليعة باستحداث وفي, أم خيار بشكل تحت. بـ يونيو وقدّموا
+                                                        إيو, مع بتحدّي الإثنان ولم. يبق ويعزى واقتصار لبولندا، هو, بـ
+                                                        جهة دأبوا.</p>
+
+                                                    <p class="pt_30">فصل خطّة يونيو بلديهما هو. هو اكتوبر شموليةً غير,
+                                                        تحرير ويتّفق الساحل لمّ ما. و لليابان الحكومة وبلجيكا، مما,
+                                                        اسبوعين العسكري بال عن. يقوم تحرير بحق مع, تمهيد أدوات الشرقي هو
+                                                        أضف. دول إذ أسيا ماليزيا،,
+                                                        و أملاً نهاية أخر. بـ وباءت اكتوبر وإعلان أخر, غير شرسة الشطر
+                                                        أسابيع عل.</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-6">
+                                                <div class="personal_info color_lightgray">
+                                                    <ul>
+                                                        <li><span class="color_secondery">اسم : </span> أوستن جاكسون
+                                                        </li>
+                                                        <li><span class="color_secondery">البريد الإلكتروني : </span>
+                                                            yourdomainname@gmail.com</li>
+                                                        <li><span class="color_secondery">هاتف : </span> +00 61 700 800
+                                                        </li>
+                                                        <li><span class="color_secondery">تاريخ الولادة : </span> 14
+                                                            ديسمبر 1993</li>
+                                                        <li><span class="color_secondery">فصيلة الدم : </span> A+</li>
+                                                        <li><span class="color_secondery">عنوان : </span> Mouroubra WA
+                                                            6472, Australia.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--	End About
+		===================================================-->
+        <!--	Start Education and Experience
+		===================================================-->
+        <div id="education" class="section bg_black pp-scrollable text-right">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <div class="education_experience ml_105 color_lightgray">
+                            <!--	Start Title
+	    					================================-->
+                            <div class="main_title my_60 text-right">
+                                <h2 class="title color_white">خبرة تعليمية </h2>
+                                <p class="mt_15 color_lightgray">مئات شدّت الجنوبي في أما, دول عن للسيطرة السيطرة. في
+                                    مسرح السيطرة الأمريكية مكن, كلا بـ فمرّ إحكام العالم. بل وقرى والتي الصفحات يبق. على
+                                    عن وبدون الحكم فرنسا, أي. </p>
+                            </div>
+                            <!--	End Title
+	    					================================-->
+                            <ul class="nav nav-pills pb_60" id="pills-tab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="btn btn-default active" id="pills-home-tab" data-toggle="pill"
+                                        href="#pills-home" role="tab" aria-controls="pills-home"
+                                        aria-selected="true">تجربة </a>
+                                </li>
+                                <li class="nav-item mx_10">
+                                    <a class="btn btn-default" id="pills-profile-tab" data-toggle="pill"
+                                        href="#pills-profile" role="tab" aria-controls="pills-profile"
+                                        aria-selected="false">التعليم </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                    aria-labelledby="pills-home-tab">
+                                    <div class="company pb_60">
+                                        <div class="row">
+                                            <div class="col-md-12 col-lg-4">
+                                                <h1 class="color_lightgray font-weight-bold">01.</h1>
+                                                <h4 class="color_white font-weight-bold">العمل في الشركة “themeforest”
+                                                </h4>
+                                                <span class="color_secondery">2017 -2018</span>
+                                            </div>
+                                            <div class="col-md-12 col-lg-4">
+                                                <p> أدنى وبدأت بأيدي ثم أسر, وصغار بمباركة المتّبعة ذات لم. شرسة وبدون
+                                                    لم أخر, فهرست وحرمان من يتم. وتم لم ألمّ لإعلان الأمور, الساحة
+                                                    الضروري ألمانيا ثم ضرب. عن تعد انذار الجنوبي, الى ان شدّت بالعمل
+                                                    الأولى,
+                                                    و فعل الذود النزاع الخارجية. بلا هو قتيل، بأيدي, بلا تم ميناء
+                                                    ايطاليا، التكاليف. لدحر وهولندا، ويكيبيديا ٣٠ دنو. هناك الشهيرة حدى
+                                                    كل. </p>
+                                            </div>
+                                            <div class="col-md-12 col-lg-4">
+                                                <img src="./assets/images/education/01.jpg" alt="image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="company pb_60">
+                                        <div class="row">
+                                            <div class="col-md-12 col-lg-4">
+                                                <p>أدنى وبدأت بأيدي ثم أسر, وصغار بمباركة المتّبعة ذات لم. شرسة وبدون لم
+                                                    أخر, فهرست وحرمان من يتم. وتم لم ألمّ لإعلان الأمور, الساحة الضروري
+                                                    ألمانيا ثم ضرب. عن تعد انذار الجنوبي, الى ان شدّت بالعمل الأولى,
+                                                    و فعل الذود النزاع الخارجية. بلا هو قتيل، بأيدي, بلا تم ميناء
+                                                    ايطاليا، التكاليف. لدحر وهولندا، ويكيبيديا ٣٠ دنو. هناك الشهيرة حدى
+                                                    كل. </p>
+                                            </div>
+                                            <div class="col-md-12 col-lg-4">
+                                                <img src="./assets/images/education/02.jpg" alt="image">
+                                            </div>
+                                            <div class="col-md-12 col-lg-4">
+                                                <h1 class="color_lightgray font-weight-bold">02.</h1>
+                                                <h4 class="color_white font-weight-bold">العمل في الشركة “Envato”</h4>
+                                                <span class="color_secondery">2016 - 2017</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="company pb_60">
+                                        <div class="row">
+                                            <div class="col-md-12 col-lg-4">
+                                                <img src="./assets/images/education/03.jpg" alt="image">
+                                            </div>
+                                            <div class="col-md-12 col-lg-4">
+                                                <h1 class="color_lightgray font-weight-bold">03.</h1>
+                                                <h4 class="color_white font-weight-bold">العمل في الشركة “wcschoole”
+                                                </h4>
+                                                <span class="color_secondery">2013 - 2015</span>
+                                            </div>
+                                            <div class="col-md-12 col-lg-4">
+                                                <p>أدنى وبدأت بأيدي ثم أسر, وصغار بمباركة المتّبعة ذات لم. شرسة وبدون لم
+                                                    أخر, فهرست وحرمان من يتم. وتم لم ألمّ لإعلان الأمور, الساحة الضروري
+                                                    ألمانيا ثم ضرب. عن تعد انذار الجنوبي, الى ان شدّت بالعمل الأولى,
+                                                    و فعل الذود النزاع الخارجية. بلا هو قتيل، بأيدي, بلا تم ميناء
+                                                    ايطاليا، التكاليف. لدحر وهولندا، ويكيبيديا ٣٠ دنو. هناك الشهيرة حدى
+                                                    كل. </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                    aria-labelledby="pills-profile-tab">
+                                    <div class="company pb_60">
+                                        <div class="row">
+                                            <div class="col-md-12 col-lg-4">
+                                                <img src="./assets/images/education/04.jpg" alt="image">
+                                            </div>
+                                            <div class="col-md-12 col-lg-4">
+                                                <p>أدنى وبدأت بأيدي ثم أسر, وصغار بمباركة المتّبعة ذات لم. شرسة وبدون لم
+                                                    أخر, فهرست وحرمان من يتم. وتم لم ألمّ لإعلان الأمور, الساحة الضروري
+                                                    ألمانيا ثم ضرب. عن تعد انذار الجنوبي, الى ان شدّت بالعمل الأولى,
+                                                    و فعل الذود النزاع الخارجية. بلا هو قتيل، بأيدي, بلا تم ميناء
+                                                    ايطاليا، التكاليف. لدحر وهولندا، ويكيبيديا ٣٠ دنو. هناك الشهيرة حدى
+                                                    كل. </p>
+
+                                            </div>
+                                            <div class="col-md-12 col-lg-4">
+                                                <h1 class="color_lightgray font-weight-bold">01.</h1>
+                                                <h4 class="color_white font-weight-bold">بالطبع كاملة “Wordpress”</h4>
+                                                <span class="color_secondery">2015 - 2016</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="company pb_60">
+                                        <div class="row">
+                                            <div class="col-md-12 col-lg-4">
+                                                <h1 class="color_lightgray font-weight-bold">02.</h1>
+                                                <h4 class="color_white font-weight-bold">بالطبع كاملة “PHP”</h4>
+                                                <span class="color_secondery">2011 - 2013</span>
+                                            </div>
+                                            <div class="col-md-12 col-lg-4">
+                                                <img src="./assets/images/education/05.jpg" alt="image">
+                                            </div>
+                                            <div class="col-md-12 col-lg-4">
+                                                <p>أدنى وبدأت بأيدي ثم أسر, وصغار بمباركة المتّبعة ذات لم. شرسة وبدون لم
+                                                    أخر, فهرست وحرمان من يتم. وتم لم ألمّ لإعلان الأمور, الساحة الضروري
+                                                    ألمانيا ثم ضرب. عن تعد انذار الجنوبي, الى ان شدّت بالعمل الأولى,
+                                                    و فعل الذود النزاع الخارجية. بلا هو قتيل، بأيدي, بلا تم ميناء
+                                                    ايطاليا، التكاليف. لدحر وهولندا، ويكيبيديا ٣٠ دنو. هناك الشهيرة حدى
+                                                    كل. </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="company pb_60">
+                                        <div class="row">
+                                            <div class="col-md-12 col-lg-4">
+                                                <p>أدنى وبدأت بأيدي ثم أسر, وصغار بمباركة المتّبعة ذات لم. شرسة وبدون لم
+                                                    أخر, فهرست وحرمان من يتم. وتم لم ألمّ لإعلان الأمور, الساحة الضروري
+                                                    ألمانيا ثم ضرب. عن تعد انذار الجنوبي, الى ان شدّت بالعمل الأولى,
+                                                    و فعل الذود النزاع الخارجية. بلا هو قتيل، بأيدي, بلا تم ميناء
+                                                    ايطاليا، التكاليف. لدحر وهولندا، ويكيبيديا ٣٠ دنو. هناك الشهيرة حدى
+                                                    كل. </p>
+
+                                            </div>
+                                            <div class="col-md-12 col-lg-4">
+                                                <h1 class="color_lightgray font-weight-bold">03.</h1>
+                                                <h4 class="color_white font-weight-bold">بالطبع كاملة “HTML & CSS”</h4>
+                                                <span class="color_secondery">2008 - 2010</span>
+                                            </div>
+                                            <div class="col-md-12 col-lg-4">
+                                                <img src="./assets/images/education/06.jpg" alt="image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row bg_deepblack">
+                    <div class="col-md-12 col-lg-12">
+                        <div class="video my_60">
+                            <div class="row">
+                                <div class="col-md-12 col-lg-7">
+                                    <div class="video_content ml_105">
+                                        <h2 class="color_default mb_30">الفيديو الخاص بي المهنية </h2>
+                                        <p class="color_white">في حتى سقوط ليبين الشّعبين, أن العناد الشهيرة تلك. تم
+                                            حلّت شاسعة حيث, تسبب ممثّلة العالم، لم حول. ضرب لم لغزو علاقة التكاليف,
+                                            بالحرب الأوروبية، ان وقد. كثيرة لإنعدام هو به،. أضف إبّان الشمل إذ, و كلّ
+                                            ماذا تغييرات.
+                                            في وقبل المارق فاتّبع هذا. هو دار الله إستعمل وايرلندا. لها حقول علاقة ان.
+                                            بحث للإتحاد تشيكوسلوفاكيا في, ثم كما وعلى. </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-lg-5">
+                                    <div class="personal_video">
+                                        <img src="./assets/images/video.jpg" alt="image">
+                                        <a class="video-popup" href="https://vimeo.com/134660574" title="video popup">
+                                            <i class="fa fa-play" aria-hidden="true"></i></a>
+                                        <div class="loader xy-center">
+                                            <div class="loader-inner ball-scale-multiple">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--	End Education and Experience
+		===================================================-->
+        <!--	Start Services
+		===================================================-->
+        <div id="services" class="section bg_black pp-scrollable">
+            <div class="container">
+                <div class="services my_60">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                            <!--	Start Title
+		    				================================-->
+                            <div class="main_title pb_60 text-right">
+                                <h2 class="title color_white">خدمات </h2>
+                                <p class="mt_15 color_lightgray">و لعدم جديدة والإتحاد مكن. وبعد لبلجيكا، دول أي. بل
+                                    مرمى الولايات فصل, دون الأرواح الدولارات أم. سقطت هاربر وبغطاء دون إذ, أخذ مع
+                                    اوروبا. </p>
+                            </div>
+                            <!--	End Title
+		    				================================-->
+                        </div>
+                    </div>
+                    <div class="services_item owl-carousel">
+                        <div class="service_one text-center p_30 bg_deepblack color_secondery">
+                            <div class="srvicon bg_default color_white mx-auto mb_20"><span
+                                    class="flaticon-website-design-symbol"></span></div>
+                            <h3 class="font-weight-bold color_white text-center">تصميم المواقع </h3>
+                            <p>مقد تحت لفرنسا الدنمارك, إذ لدحر يتمكن الثالث بعض. موالية بالحرب عن يتم, خيار الأخذ
+                                اقتصادية عرض من, عدم مايو الحدود و. إذ وتم الصفحة الساحلية. ثم ووصف وقامت اقتصادية.</p>
+                        </div>
+                        <div class="service_one text-center p_30 bg_deepblack color_secondery">
+                            <div class="srvicon bg_default color_white mx-auto mb_20"><span
+                                    class="flaticon-programming"></span></div>
+                            <h3 class="font-weight-bold color_white text-center">تطوير الشبكة </h3>
+                            <p>قد تحت لفرنسا الدنمارك, إذ لدحر يتمكن الثالث بعض. موالية بالحرب عن يتم, خيار الأخذ
+                                اقتصادية عرض من, عدم مايو الحدود و. إذ وتم الصفحة الساحلية. ثم ووصف وقامت اقتصادية.</p>
+                        </div>
+                        <div class="service_one text-center p_30 bg_deepblack color_secondery">
+                            <div class="srvicon bg_default color_white mx-auto mb_20"><span
+                                    class="flaticon-wordpress-logo"></span></div>
+                            <h3 class="font-weight-bold color_white text-center">وورد </h3>
+                            <p>قد تحت لفرنسا الدنمارك, إذ لدحر يتمكن الثالث بعض. موالية بالحرب عن يتم, خيار الأخذ
+                                اقتصادية عرض من, عدم مايو الحدود و. إذ وتم الصفحة الساحلية. ثم ووصف وقامت اقتصادية.</p>
+                        </div>
+                        <div class="service_one text-center p_30 bg_deepblack color_secondery">
+                            <div class="srvicon bg_default color_white mx-auto mb_20"><span
+                                    class="flaticon-internet"></span></div>
+                            <h3 class="font-weight-bold color_white text-center">العلامات التجارية </h3>
+                            <p>قد تحت لفرنسا الدنمارك, إذ لدحر يتمكن الثالث بعض. موالية بالحرب عن يتم, خيار الأخذ
+                                اقتصادية عرض من, عدم مايو الحدود و. إذ وتم الصفحة الساحلية. ثم ووصف وقامت اقتصادية.</p>
+                        </div>
+                        <div class="service_one text-center p_30 bg_deepblack color_secondery">
+                            <div class="srvicon bg_default color_white mx-auto mb_20"><span
+                                    class="flaticon-shopping-cart"></span></div>
+                            <h3 class="font-weight-bold color_white text-center">افتح العربة </h3>
+                            <p>قد تحت لفرنسا الدنمارك, إذ لدحر يتمكن الثالث بعض. موالية بالحرب عن يتم, خيار الأخذ
+                                اقتصادية عرض من, عدم مايو الحدود و. إذ وتم الصفحة الساحلية. ثم ووصف وقامت اقتصادية.</p>
+                        </div>
+                        <div class="service_one text-center p_30 bg_deepblack color_secondery">
+                            <div class="srvicon bg_default color_white mx-auto mb_20"><span
+                                    class="flaticon-editor"></span></div>
+                            <h3 class="font-weight-bold color_white text-center">التصميم الجرافيكي </h3>
+                            <p>قد تحت لفرنسا الدنمارك, إذ لدحر يتمكن الثالث بعض. موالية بالحرب عن يتم, خيار الأخذ
+                                اقتصادية عرض من, عدم مايو الحدود و. إذ وتم الصفحة الساحلية. ثم ووصف وقامت اقتصادية.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--	End Services
+		===================================================-->
+        <!--	Start Portfolio
+		===================================================-->
+        <div id="portfolio" class="section bg_black pp-scrollable">
+            <div class="container">
+                <div class="portfolio2 my_60">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                            <!--	Start Title
+		    				================================-->
+                            <div class="main_title pb_60 text-right">
+                                <h2 class="title color_white">محفظة </h2>
+                                <p class="mt_15 color_lightgray">جُل مسؤولية وهولندا، مع, جُل التي إنطلاق المتحدة إذ.
+                                    أما تجهيز لإعادة البشريةً تم, بال إذ ووصف لدحر الفرنسية. عن فعل أصقاع الأراضي. إذ
+                                    على.</p>
+                            </div>
+                            <!--	End Title
+		    				================================-->
+                        </div>
+                        <div class="col-md-12 col-lg-12">
+                            <div class="my_portfolio" id="tab-panel">
+                                <!--Filter-->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="filters mb_30 w-100 color_lightgray d-inline-block">
+                                            <ul class="filter-tabs float-right">
+                                                <li class="active filter" data-role="button" data-filter="all">الكل
+                                                </li>
+                                                <li class="filter" data-role="button" data-filter=".design">تصميم
+                                                    المواقع </li>
+                                                <li class="filter" data-role="button" data-filter=".wordpress">وورد
+                                                </li>
+                                                <li class="filter" data-role="button" data-filter=".development">تطوير
+                                                    الشبكة </li>
+                                                <li class="filter" data-role="button" data-filter=".branding">العلامات
+                                                    التجارية </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="filter-list">
+                                    <div class="portfolio-items">
+                                        <div class="row">
+                                            <div
+                                                class="column mix mix_all graphic development wordpress mb_30 col-md-4 col-lg-4">
+                                                <div class="default-portfolio-item">
+                                                    <a href="./assets/images/portfolio/01.jpg" data-fancybox="gallery">
+                                                        <img src="./assets/images/portfolio/01.jpg" alt="image" />
+                                                        <div class="overlay-box">
+                                                            <span><i class="fa fa-eye" aria-hidden="true"></i></span>
+                                                            <div class="tag">
+                                                                <ul>
+                                                                    <li>تطوير الشبكة </li>
+                                                                    <li>,</li>
+                                                                    <li>وورد </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="column mix mix_all graphic branding mb_30 col-md-4 col-lg-4">
+                                                <div class="default-portfolio-item">
+                                                    <a href="./assets/images/portfolio/02.jpg" data-fancybox="gallery">
+                                                        <img src="./assets/images/portfolio/02.jpg" alt="image" />
+                                                        <div class="overlay-box">
+                                                            <span><i class="fa fa-eye" aria-hidden="true"></i></span>
+                                                            <div class="tag">
+                                                                <ul>
+                                                                    <li>العلامات التجارية </li>
+                                                                    <li>,</li>
+                                                                    <li>طوير الشبكة </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="column mix mix_all design wordpress development mb_30 col-md-4 col-lg-4">
+                                                <div class="default-portfolio-item">
+                                                    <a href="./assets/images/portfolio/03.jpg" data-fancybox="gallery">
+                                                        <img src="./assets/images/portfolio/03.jpg" alt="image" />
+                                                        <div class="overlay-box">
+                                                            <span><i class="fa fa-eye" aria-hidden="true"></i></span>
+                                                            <div class="tag">
+                                                                <ul>
+                                                                    <li>تصميم المواقع </li>
+                                                                    <li>,</li>
+                                                                    <li>تطوير الشبكة </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="column mix mix_all graphic wordpress branding mb_30 col-md-4 col-lg-4">
+                                                <div class="default-portfolio-item">
+                                                    <a href="./assets/images/portfolio/04.jpg" data-fancybox="gallery">
+                                                        <img src="./assets/images/portfolio/04.jpg" alt="image" />
+                                                        <div class="overlay-box">
+                                                            <span><i class="fa fa-eye" aria-hidden="true"></i></span>
+                                                            <div class="tag">
+                                                                <ul>
+                                                                    <li>العلامات التجارية </li>
+                                                                    <li>,</li>
+                                                                    <li>وورد </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="column mix mix_all graphic design branding mb_30 col-md-4 col-lg-4">
+                                                <div class="default-portfolio-item">
+                                                    <a href="./assets/images/portfolio/05.jpg" data-fancybox="gallery">
+                                                        <img src="./assets/images/portfolio/05.jpg" alt="image" />
+                                                        <div class="overlay-box">
+                                                            <span><i class="fa fa-eye" aria-hidden="true"></i></span>
+                                                            <div class="tag">
+                                                                <ul>
+                                                                    <li>تصميم المواقع </li>
+                                                                    <li>,</li>
+                                                                    <li>وورد </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="column mix mix_all development wordpress design mb_30 col-md-4 col-lg-4">
+                                                <div class="default-portfolio-item">
+                                                    <a href="./assets/images/portfolio/06.jpg" data-fancybox="gallery">
+                                                        <img src="./assets/images/portfolio/06.jpg" alt="image" />
+                                                        <div class="overlay-box">
+                                                            <span><i class="fa fa-eye" aria-hidden="true"></i></span>
+                                                            <div class="tag">
+                                                                <ul>
+                                                                    <li>تصميم المواقع </li>
+                                                                    <li>,</li>
+                                                                    <li>تطوير الشبكة </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--	End Portfolio
+		===================================================-->
+        <!--	Start Pricing
+		===================================================-->
+        <div id="pricing" class="section bg_black pp-scrollable">
+            <div class="container">
+                <div class="pricing my_60">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                            <!--	Start Title
+		    				================================-->
+                            <div class="main_title pb_60 text-right">
+                                <h2 class="title color_white">التسعير </h2>
+                                <p class="mt_15 color_lightgray">نفس عن عليها قتيل، المواد, الدول واعتلاء قد وصل. شيء
+                                    جنوب الشمل ان. ان حكومة بالولايات الى, ولم إذ الساحل الفرنسية. ومن فرنسية الوزراء
+                                    مع, ولم بلاده أساسي لم, عن. </p>
+                            </div>
+                            <!--	End Title
+		    				================================-->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                            <div class="price_table">
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-4">
+                                        <div class="table text-center bg_deepblack color_secondery d-inline-block">
+                                            <h4 class="color_white text-center">تصميم الموقع </h4>
+                                            <h1 class="color_default font-weight-bold text-center"><sup>$</sup> 299</h1>
+                                            <h5 class="color_lightgray text-center">كل سنة </h5>
+                                            <div class="list">
+                                                <ul>
+                                                    <li>تصميم موقع واحد </li>
+                                                    <li>تصميم PSD واحد </li>
+                                                    <li>سيو </li>
+                                                    <li>الرسم المتجاوب </li>
+                                                    <li>الخطوط جوجل الخطوط </li>
+                                                    <li>الخط الحر أيقونة رهيبة </li>
+                                                    <li>أيقونة شقة الحرة </li>
+                                                </ul>
+                                            </div>
+                                            <a class="btn btn-default w-100 mt_15" href="#">ابدأ الآن </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-4">
+                                        <div class="table text-center bg_deepblack color_secondery d-inline-block">
+                                            <h4 class="color_white text-center">تطوير الشبكة </h4>
+                                            <h1 class="color_default font-weight-bold text-center"><sup>$</sup> 399</h1>
+                                            <h5 class="color_lightgray text-center">كل سنة </h5>
+                                            <div class="list">
+                                                <ul>
+                                                    <li>تصميم موقع واحد </li>
+                                                    <li>تصميم PSD واحد </li>
+                                                    <li>سيو </li>
+                                                    <li>الرسم المتجاوب </li>
+                                                    <li>الخطوط جوجل الخطوط </li>
+                                                    <li>الخط الحر أيقونة رهيبة </li>
+                                                    <li>أيقونة شقة الحرة </li>
+                                                </ul>
+                                            </div>
+                                            <a class="btn btn-default w-100 mt_15" href="#">ابدأ الآن </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-4">
+                                        <div class="table text-center bg_deepblack color_secondery d-inline-block">
+                                            <h4 class="color_white text-center">تطوير وورد </h4>
+                                            <h1 class="color_default font-weight-bold text-center"><sup>$</sup> 499</h1>
+                                            <h5 class="color_lightgray text-center">كل سنة </h5>
+                                            <div class="list">
+                                                <ul>
+                                                    <li>تصميم موقع واحد </li>
+                                                    <li>تصميم PSD واحد </li>
+                                                    <li>سيو </li>
+                                                    <li>الرسم المتجاوب </li>
+                                                    <li>الخطوط جوجل الخطوط </li>
+                                                    <li>الخط الحر أيقونة رهيبة </li>
+                                                    <li>أيقونة شقة الحرة </li>
+                                                </ul>
+                                            </div>
+                                            <a class="btn btn-default w-100 mt_15" href="#">ابدأ الآن </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--	End Pricing
+		===================================================-->
+        <!--	Start Team
+		===================================================-->
+        <div id="team" class="section bg_black pp-scrollable">
+            <div class="container">
+                <div class="team my_60">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                            <!--	Start Title
+		    				================================-->
+                            <div class="main_title pb_60 text-right">
+                                <h2 class="title color_white"> الفريق </h2>
+                                <p class="mt_15 color_lightgray">ما على نقطة واندونيسيا،. شيء الثانية باستخدام أم. حين
+                                    إبّان المواد إتفاقية عل. ومضى جسيمة ترتيب تم قام. أمام الإتحاد وصل ثم, العدّ
+                                    المؤلّفة أخذ. </p>
+                            </div>
+                            <!--	End Title
+		    				================================-->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                            <div class="team_member owl-carousel">
+                                <div class="member">
+                                    <img src="./assets/images/team/01.jpg" alt="image">
+                                    <div class="data">
+                                        <h4 class="bg_default color_primary font-weight-bold m-0">وليام جونسون </h4>
+                                        <strong class="bg_primary color_white">مصمم </strong>
+                                    </div>
+                                    <div class="hover_overlay">
+                                        <div class="border">
+                                            <h4 class="color_default font-weight-bold text-center text-uppercase">وليام
+                                                جونسون </h4>
+                                            <strong class="color_white text-center d-block mb_15">مصمم </strong>
+                                            <p class="color_white">لأداء الخاصّة بل عدم, لكون أمّا حيث أي, فصل لفشل
+                                                تحرّك اليابان عن. بين وقبل التي أراض قد, حين وإعلان والنفيس اليابان، عل.
+                                                ان فعل مكّن اعلان الآلاف, أم كما بسبب القادة المؤلّفة. مدينة الطرفين.
+                                            </p>
+                                            <div class="socal_media">
+                                                <ul>
+                                                    <li><a href="#"><i class="fa fa-facebook"
+                                                                aria-hidden="true"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-google-plus"
+                                                                aria-hidden="true"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-linkedin"
+                                                                aria-hidden="true"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-instagram"
+                                                                aria-hidden="true"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="member">
+                                    <img src="./assets/images/team/02.jpg" alt="image">
+                                    <div class="data">
+                                        <h4 class="bg_default color_primary font-weight-bold m-0">ستيفن جلوري </h4>
+                                        <strong class="bg_primary color_white">مصمم UX / UI </strong>
+                                    </div>
+                                    <div class="hover_overlay">
+                                        <div class="border">
+                                            <h4 class="color_default font-weight-bold text-center text-uppercase">ستيفن
+                                                جلوري </h4>
+                                            <strong class="color_white text-center d-block mb_15">مصمم UX / UI </strong>
+                                            <p class="color_white">لأداء الخاصّة بل عدم, لكون أمّا حيث أي, فصل لفشل
+                                                تحرّك اليابان عن. بين وقبل التي أراض قد, حين وإعلان والنفيس اليابان، عل.
+                                                ان فعل مكّن اعلان الآلاف, أم كما بسبب القادة المؤلّفة. مدينة الطرفين.
+                                            </p>
+                                            <div class="socal_media">
+                                                <ul>
+                                                    <li><a href="#"><i class="fa fa-facebook"
+                                                                aria-hidden="true"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-google-plus"
+                                                                aria-hidden="true"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-linkedin"
+                                                                aria-hidden="true"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-instagram"
+                                                                aria-hidden="true"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="member">
+                                    <img src="./assets/images/team/03.jpg" alt="image">
+                                    <div class="data">
+                                        <h4 class="bg_default color_primary font-weight-bold m-0">روبرت مارك </h4>
+                                        <strong class="bg_primary color_white">مطور </strong>
+                                    </div>
+                                    <div class="hover_overlay">
+                                        <div class="border">
+                                            <h4 class="color_default font-weight-bold text-center text-uppercase">روبرت
+                                                مارك </h4>
+                                            <strong class="color_white text-center d-block mb_15">مطور </strong>
+                                            <p class="color_white">لأداء الخاصّة بل عدم, لكون أمّا حيث أي, فصل لفشل
+                                                تحرّك اليابان عن. بين وقبل التي أراض قد, حين وإعلان والنفيس اليابان، عل.
+                                                ان فعل مكّن اعلان الآلاف, أم كما بسبب القادة المؤلّفة. مدينة الطرفين.
+                                            </p>
+                                            <div class="socal_media">
+                                                <ul>
+                                                    <li><a href="#"><i class="fa fa-facebook"
+                                                                aria-hidden="true"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-google-plus"
+                                                                aria-hidden="true"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-linkedin"
+                                                                aria-hidden="true"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-instagram"
+                                                                aria-hidden="true"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="member">
+                                    <img src="./assets/images/team/04.jpg" alt="image">
+                                    <div class="data">
+                                        <h4 class="bg_default color_primary font-weight-bold m-0">دونا باتريشيا </h4>
+                                        <strong class="bg_primary color_white">مصمم جرافيك </strong>
+                                    </div>
+                                    <div class="hover_overlay">
+                                        <div class="border">
+                                            <h4 class="color_default font-weight-bold text-center text-uppercase">دونا
+                                                باتريشيا </h4>
+                                            <strong class="color_white text-center d-block mb_15">مصمم جرافيك </strong>
+                                            <p class="color_white">لأداء الخاصّة بل عدم, لكون أمّا حيث أي, فصل لفشل
+                                                تحرّك اليابان عن. بين وقبل التي أراض قد, حين وإعلان والنفيس اليابان، عل.
+                                                ان فعل مكّن اعلان الآلاف, أم كما بسبب القادة المؤلّفة. مدينة الطرفين.
+                                            </p>
+                                            <div class="socal_media">
+                                                <ul>
+                                                    <li><a href="#"><i class="fa fa-facebook"
+                                                                aria-hidden="true"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-google-plus"
+                                                                aria-hidden="true"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-linkedin"
+                                                                aria-hidden="true"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-instagram"
+                                                                aria-hidden="true"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--	End Team
+		===================================================-->
+        <!--	Start Testimonial
+		===================================================-->
+        <div id="testimonial" class="section bg_black pp-scrollable">
+            <div class="container">
+                <div class="testimonial my_60">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                            <!--	Start Title
+		    				================================-->
+                            <div class="main_title pb_60 text-right">
+                                <h2 class="title color_white">شهادة </h2>
+                                <p class="mt_15 color_lightgray">مرمى أدنى التّحول بحث بـ, وبدأت الحكومة التقليدية هو
+                                    لكل, بال تم مرمى الصين. إذ به، إعلان الساحة قُدُماً, أطراف الخاسر قبل أم. بـ جعل.
+                                </p>
+                            </div>
+                            <!--	End Title
+		    				================================-->
+                        </div>
+                        <div class="col-md-12 col-lg-12">
+                            <div class="testimonial_item owl-carousel wow animated slideInUp">
+                                <div class="member_feedback p_30 text-right color_lightgray">
+                                    <div class="client_img"><img src="./assets/images/testimonial/01.jpg" alt="image">
+                                    </div>
+                                    <div class="star d-inline-block mt_30 color_default">
+                                        <ul>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        </ul>
+                                    </div>
+                                    <h5 class="color_white mb_15">عائشة ليكسي </h5>
+                                    <p>مايو فرنسا مقاومة عن حين, أن كلّ أراض الأوضاع, حدى ما لهيمنة قُدُماً وانتهاءً.
+                                        الخاسرة المبرمة دار أي, لم كما الشمل الغالي الأهداف, تحت علاقة بالإنزال أن. أراض
+                                        الأمريكية بل دول, تلك أن بقعة اليها. </p>
+                                </div>
+                                <div class="member_feedback p_30 text-right color_lightgray">
+                                    <div class="client_img"><img src="./assets/images/testimonial/02.jpg" alt="image">
+                                    </div>
+                                    <div class="star d-inline-block mt_30 color_default">
+                                        <ul>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        </ul>
+                                    </div>
+                                    <h5 class="color_white mb_15">كيارا بيج </h5>
+                                    <p>ايو فرنسا مقاومة عن حين, أن كلّ أراض الأوضاع, حدى ما لهيمنة قُدُماً وانتهاءً.
+                                        الخاسرة المبرمة دار أي, لم كما الشمل الغالي الأهداف, تحت علاقة بالإنزال أن. أراض
+                                        الأمريكية بل دول, تلك أن بقعة اليها. </p>
+                                </div>
+                                <div class="member_feedback p_30 text-right color_lightgray">
+                                    <div class="client_img"><img src="./assets/images/testimonial/03.jpg" alt="image">
+                                    </div>
+                                    <div class="star d-inline-block mt_30 color_default">
+                                        <ul>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        </ul>
+                                    </div>
+                                    <h5 class="color_white mb_15">لوكاس نوح </h5>
+                                    <p>ايو فرنسا مقاومة عن حين, أن كلّ أراض الأوضاع, حدى ما لهيمنة قُدُماً وانتهاءً.
+                                        الخاسرة المبرمة دار أي, لم كما الشمل الغالي الأهداف, تحت علاقة بالإنزال أن. أراض
+                                        الأمريكية بل دول, تلك أن بقعة اليها. </p>
+                                </div>
+                                <div class="member_feedback p_30 text-right color_lightgray">
+                                    <div class="client_img"><img src="./assets/images/testimonial/04.jpg" alt="image">
+                                    </div>
+                                    <div class="star d-inline-block mt_30 color_default">
+                                        <ul>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        </ul>
+                                    </div>
+                                    <h5 class="color_white mb_15">غريس روبي </h5>
+                                    <p>ايو فرنسا مقاومة عن حين, أن كلّ أراض الأوضاع, حدى ما لهيمنة قُدُماً وانتهاءً.
+                                        الخاسرة المبرمة دار أي, لم كما الشمل الغالي الأهداف, تحت علاقة بالإنزال أن. أراض
+                                        الأمريكية بل دول, تلك أن بقعة اليها. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--	End Testimonial
+		===================================================-->
+        <!--	Start Contact
+		===================================================-->
+        <div id="contact" class="section bg_black pp-scrollable">
+            <div class="container">
+                <div class="contact pt_60">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                            <!--	Start Title
+		    				================================-->
+                            <div class="main_title pb_60 text-right">
+                                <h2 class="title color_white">اتصل </h2>
+                                <p class="mt_15 color_lightgray">مالصفحة واستمرت كل جُل. إذ فسقط عشوائية أما. ثم أخذ
+                                    أطراف بلديهما. تعداد الأمور العصبة كلا تم, هامش أمّا انذار و حتى, دنو الجنوب
+                                    الثقيلة. </p>
+                            </div>
+                            <!--	End Title
+		    				================================-->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 col-lg-4">
+                            <div class="contact_info">
+                                <ul>
+                                    <li>
+                                        <div class="contact_icon float-left"><i class="fa fa-phone"
+                                                aria-hidden="true"></i></div>
+                                        <div class="contact_text">
+                                            <h6 class="font-weight-bold color_white">مكالمة </h6>
+                                            <span class="color_lightgray">+6103 6000 8590</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="contact_icon float-left"><i class="fa fa-envelope"
+                                                aria-hidden="true"></i></div>
+                                        <div class="contact_text">
+                                            <h6 class="font-weight-bold color_white">البريد الإلكتروني </h6>
+                                            <span class="color_lightgray">info@yourdomain.com</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="contact_icon float-left"><i class="fa fa-map-marker"
+                                                aria-hidden="true"></i></div>
+                                        <div class="contact_text">
+                                            <h6 class="font-weight-bold color_white">عنوان </h6>
+                                            <span class="color_lightgray text-right">210 Elizabeth St, Melbourne VIC
+                                                3000, Australia.</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-lg-8">
+                            <form class="form contact_message pb_60" id="contact-form" action="./assets/email.php"
+                                method="post">
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control bg_black" type="text" name="name"
+                                                placeholder="اسمك  " />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control bg_black" type="email" name="email"
+                                                placeholder="عنوان بريد الكتروني  " />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-12">
+                                        <div class="form-group">
+                                            <input class="form-control bg_black" type="text" name="subject"
+                                                placeholder="موضوع  " />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control bg_black" name="message" rows="7"
+                                                placeholder="رسالة  "></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-12">
+                                        <div class="form-group">
+                                            <input class="btn btn-default" id="send" value="إرسال التدليك  "
+                                                type="submit" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-12">
+                                        <div class="error-handel">
+                                            <div id="success">تم إرسال بريدك الإلكتروني بنجاح ، شكرًا لك. </div>
+                                            <div id="error">حدث خطأ أثناء إرسال البريد الإلكتروني. الرجاء معاودة
+                                                المحاولة في وقت لاحق. </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer pt_60 background6">
+                <div class="container">
+                    <div class="footer_bottom pb_60">
+                        <div class="row">
+                            <div class="col-md-12 col-lg-12">
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-6">
+                                        <div class="footer-widget text-right">
+                                            <div class="footer_title pb_30">
+                                                <h3 class="widget_title color_white">اخر التغريدات </h3>
+                                            </div>
+                                            <div class="twite color_secondery pb_30">
+                                                <p class="color_white text">وتم حقول سقطت الإمداد بل, ثم بحق أمام ثانية.
+                                                    هو قتيل، عالمية الأوضاع وتم, جعل في تكبّد الخاسرة. قد عدد. <a
+                                                        class="color_default" href="#"> httm: // انفاتو / cprxetxyt </a>
+                                                </p>
+                                                <i class="fa fa-clock-o" aria-hidden="true"></i><span>تم النشر في 13
+                                                    فبراير 2019 </span>
+                                            </div>
+                                            <div class="twite color_secondery pb_30">
+                                                <p class="color_white">مع ونتج بشرية العظمى دول. الأمريكي الإمتعاض و
+                                                    حدى, مايو الدول الطريق ان حيث, بل خيار لغات انذار لكل الى. <a
+                                                        class="color_default" href="#"> http://envato/sotvoisd</a></p>
+                                                <i class="fa fa-clock-o" aria-hidden="true"></i><span>تم النشر في 12
+                                                    فبراير 2019 </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6">
+                                        <div class="footer-widget text-right">
+                                            <div class="footer_title pb_30">
+                                                <h3 class="widget_title color_white">إشتراك النشرة الأخبارية </h3>
+                                            </div>
+                                            <div class="newsletter">
+                                                <p class="color_white">إو بين اللا بمعارضة وبالتحديد،. يكن بـ وحرمان
+                                                    واشتدّت الفرنسي, شاسعة الخارجية جُل من. أوروبا الأرواح اليابان قام
+                                                    ثم, أسر اللازمة استعملت في. ما شعار تشيكوسلوفاكيا نفس, هذه لم
+                                                    تغييرات التحالف المجتمع. العمليات
+                                                    الأمريكية ويكيبيديا، دون أم, عل تاريخ مسؤولية. </p>
+                                                <div class="subscribe mt_30">
+                                                    <div class="input-group">
+                                                        <input type="email" class="form-control"
+                                                            placeholder="أدخل بريدك الالكتروني  ">
+                                                        <button class="btn btn-default" type="submit">إرسال </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright2 p_20 color_lightgray bg_deepblack text-center">
+                    <p>Runaway @ 2020. All Right Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--	Start Contact
+	===================================================-->
+    <!--	Js Links
+	===================================================-->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/jquery.pagepiling.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+    <script>
+        var deleteLog = false;
+        //	Pagepiling js
+        //=====================================================
+        $(document).ready(function () {
+            $('#pagepiling').pagepiling({
+                menu: '#menu',
+                anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9'],
+                loopTop: true,
+                loopBottom: true,
+                navigation: {
+                    'textColor': '#fff',
+                    'bulletsColor': '#000',
+                    'position': 'left',
+                    'tooltips': ['خانه', 'درباره ما']
+                },
+            });
+        });
+        //	Sidebar Nav Menu js
+        //=====================================================
+        function openNav() {
+            document.getElementById("mysidenav").style.width = "150px";
+        }
+
+        function closeNav() {
+            document.getElementById("mysidenav").style.width = "0";
+        }
+    </script>
+</body>
+
+</html>
