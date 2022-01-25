@@ -57,7 +57,7 @@
 }
 
 .bg_deepblack {
-  background-color: #232323;
+  background-color: #6d6363 !important;
 }
 
 .bg_white {
@@ -139,7 +139,7 @@ ul#menu li.active a,
 }
 
 .dark_nav.nav-scroll {
-  background-color: #232323 !important;
+  background-color: #6d6363 !important !important;
 }
 
 .dark_nav.nav-scroll .navbar-light .navbar-nav .nav-link,
@@ -243,7 +243,7 @@ ul#menu li a:hover,
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #232323;
+  background-color: #6d6363 !important;
 }
 
 /*	Background Color Primary Class & ID
@@ -293,7 +293,7 @@ ul#menu li a:hover,
 }
 
 #scroll span {
-  border-bottom-color: #ffffff;
+  border-bottom-color: #fff;
 }
 
 .socal_media ul li a,
@@ -650,5 +650,190 @@ a.active {
   float: left;
   padding-right: 20px;
   font-size: 18px;
+}
+
+/* 05.   Massage Box */
+.contact_massage {
+  content: '';
+  position: fixed;
+  top: 20px;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  z-index: 111;
+}
+
+.contact_massage a {
+  font-size: 24px;
+  line-height: 60px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*====================================================================
+06.		Main Title
+======================================================================*/
+.section_title_1 .title span {
+  display: table;
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 35px;
+}
+
+.section_title_1 {
+  width: 60%;
+}
+
+.main_title p {
+  width: 40%;
+}
+
+.line_double {
+  position: relative;
+  text-transform: lowercase;
+  padding: 0 50px !important;
+}
+
+.line_double::before,
+.line_double::after {
+  background-color: #95bb2f;
+}
+
+.line_double::before {
+  left: 0;
+}
+
+.line_double::before,
+.line_double::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  top: 50%;
+}
+
+.line_double::after {
+  right: 0;
+}
+
+.line_double::before,
+.line_double::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  top: 50%;
+}
+
+#pp-nav {
+  z-index: 11;
+}
+
+#pp-nav span,
+.pp-slidesNav span {
+  top: 2px;
+  left: 2px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+}
+
+#pp-nav li .active span:before {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: -4px;
+  left: -4px;
+  border-radius: 100%;
+  border: 1px solid #fff;
+}
+
+.widget_title {
+  position: relative;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.widget_title:before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0px;
+  width: 50px;
+  height: 2px;
+}
+
+/*====================================================================
+07.   background Image
+======================================================================*/
+.bg_transparent {
+  background-color: transparent;
+}
+
+.background1 {
+  background-image: url(../images/slider/03.jpg);
+}
+
+.background2 {
+  background: url(../images/background/01.jpg) no-repeat center fixed;
+}
+
+.background3 {
+  background-image: url(../images/slider/04.jpg);
+}
+
+.background4 {
+  background-image: url(../images/slider/05.jpg);
+}
+
+.background5 {
+  background-image: url(../images/slider/06.jpg);
+}
+
+.background6 {
+  background-image: url(../images/footer.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+}
+
+.background7 {
+  background-image: url(../images/background/02.jpg);
+}
+
+.background8 {
+  background-image: url(../images/background/03.png);
+}
+
+.background9 {
+  background-image: url(../images/background/04.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.background10 {
+  background-image: url(../images/slider/07.jpg);
+}
+
+.background11 {
+  background-image: url(../images/slider/08.jpg);
+}
+
+.background12 {
+  background-image: url(../images/slider/09.jpg);
+}
+
+.background13 {
+  background-image: url(../images/slider/10.jpg);
+}
+
+.background14 {
+  background-image: url(../images/slider/11.jpg);
 }
 /*# sourceMappingURL=mainStyle.css.map */
