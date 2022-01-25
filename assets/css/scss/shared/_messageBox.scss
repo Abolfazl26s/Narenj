@@ -1,19 +1,33 @@
 /* 05.   Massage Box */
 
-.contact_massage {
+.contact_massage,
+.toggle-menu {
   content: '';
   position: fixed;
   top: 20px;
-  right: 0;
+  left: 0;
   width: 60px;
   height: 60px;
   z-index: 111;
+  border-radius: 0 50% 50% 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255, 145, 0) !important;
+
+  a {
+    font-size: 24px;
+    line-height: 60px;
+    display: block;
+    margin: 0%;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-bottom: 0.1em;
+  }
 }
 
-.contact_massage a {
-  font-size: 24px;
-  line-height: 60px;
-  display: block;
-  margin: 0 auto;
-  text-align: center;
+.toggle-menu {
+  border-radius: 50% 0 0 50%;
+  right: 0;
 }

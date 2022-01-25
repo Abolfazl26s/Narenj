@@ -15,7 +15,6 @@ Table of CSS Content arrage with every section name
 =====================================================================================
 
 08.   Nav Menu Css
-09.   Side Nav menu
 10.   Main banner
 11.   Slider 
 12.	  About
@@ -126,64 +125,6 @@ header {
   border-bottom: none;
 }
 
-/*==================================================================================
-09.   Side Nav menu
-====================================================================================*/
-
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  z-index: 100;
-  padding: 30px 20px;
-}
-
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidenav a {
-  text-decoration: none;
-  font-size: 14px;
-  display: block;
-}
-
-ul#menu li a {
-  padding: 7px 30px;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 36px;
-}
-
-.sidebar span {
-  font-size: 36px;
-  display: block;
-  text-align: center;
-}
-
-.sidebar img {
-  margin-bottom: 60px;
-}
-
-#mysidenav img {
-  width: 50px;
-  height: auto;
-  display: block;
-  margin: 15px 0px 30px 30px;
-}
 
 /*====================================================================
 10.   Main banner
