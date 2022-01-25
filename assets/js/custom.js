@@ -135,13 +135,13 @@
     //====================================================================================
     // 03.    Auto Collapsed Main Menu After Clicking on nav-link in Tab/Mobile
     //====================================================================================
-    $('.navbar-nav>li>a').on('click', function() {
-        $('.navbar-collapse').collapse('hide');
-    });
+    // $('.navbar-nav>li>a').on('click', function() {
+    //     $('.navbar-collapse').collapse('hide');
+    // });
 
-    $('#menu li>a').on('click', function closeNav() {
-        document.getElementById("mysidenav").style.width = "0";
-    });
+    // $('#menu li>a').on('click', function closeNav() {
+    //     document.getElementById("mysidenav").style.width = "0";
+    // });
     //=====================================================================================
     //  04.   Services Slider
     //=====================================================================================

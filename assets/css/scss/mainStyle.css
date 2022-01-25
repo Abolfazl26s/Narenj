@@ -7,7 +7,7 @@
 /*	Color
 =====================================================================*/
 .color_default {
-  color: #e4950d;
+  color: #ef8201;
 }
 
 .color_primary {
@@ -33,7 +33,7 @@
 /*	Background Color
 ===================================================================*/
 .bg_default {
-  background-color: #e4950d;
+  background-color: #ef8201;
 }
 
 .bg_primary {
@@ -67,7 +67,7 @@
 /*	btn color
 ===================================================================*/
 .btn-default {
-  background-color: #e4950d;
+  background-color: #ef8201;
   color: #fff;
 }
 
@@ -84,7 +84,7 @@
 }
 
 .btn_info {
-  color: #e4950d;
+  color: #ef8201;
 }
 
 .btn_info:hover {
@@ -112,7 +112,7 @@
 .navbar-nav .nav-item .nav-link:before,
 .dropdown-item:focus,
 .dropdown-item:hover {
-  background-color: #e4950d;
+  background-color: #ef8201;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -131,7 +131,7 @@
 ul#menu li.active a,
 .contact_massage a,
 .navbar-light .navbar-nav .nav-link:focus {
-  color: #e4950d;
+  color: #ef8201;
 }
 
 .nav-scroll .navbar-light .navbar-nav .nav-link {
@@ -158,7 +158,7 @@ ul#menu li.active a,
 }
 
 .white_hover a i:hover {
-  color: #e4950d;
+  color: #ef8201;
 }
 
 /*	Default Color Class & ID
@@ -176,7 +176,7 @@ ul#menu li a:hover,
 .white_link a:hover,
 .recent_post a:hover,
 .archives ul li a:hover {
-  color: #e4950d;
+  color: #ef8201;
 }
 
 /*	Primary Color Class & ID
@@ -239,7 +239,7 @@ ul#menu li a:hover,
 .page-item.active .page-link,
 .page-link:hover,
 .tags ul li a:hover {
-  background-color: #e4950d !important;
+  background-color: #ef8201 !important;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -283,7 +283,7 @@ ul#menu li a:hover,
 /*	Border Color Default
 ===================================================================*/
 .overlay-box {
-  border-color: #e4950d;
+  border-color: #ef8201;
 }
 
 /*	Border Color Primary
@@ -332,7 +332,7 @@ ul#menu li a:hover,
 }
 
 .border {
-  border-color: #e4950d !important;
+  border-color: #ef8201 !important;
 }
 
 .form-control:focus {
@@ -371,7 +371,7 @@ ul#menu li a:hover,
 
 .sidenav {
   height: 100%;
-  width: 0;
+  width: 250px;
   position: fixed;
   z-index: 999;
   top: 0;
@@ -380,16 +380,66 @@ ul#menu li a:hover,
   -webkit-transition: 0.5s;
   transition: 0.5s;
   padding-top: 60px;
+  -webkit-transform: translate(100%, -100%);
+          transform: translate(100%, -100%);
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+.activeMenu {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
+
+.activeToggleMenu {
+  right: 250px !important;
+  z-index: 998 !important;
+}
+
+.toggle-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 20px;
+  right: 0px;
+  width: 60px;
+  height: 60px;
+  background: orange;
+  z-index: 1000;
+  border-radius: 50% 0 0 50%;
+  -webkit-transition: right 0.4s cubic-bezier(0.78, 0.19, 0.37, 1.44);
+  transition: right 0.4s cubic-bezier(0.78, 0.19, 0.37, 1.44);
+}
+
+.toggle-menu i {
+  padding: 0 !important;
+  margin: 0% !important;
+  text-shadow: 0 2px 4px black;
+  cursor: pointer;
 }
 
 .sidenav a {
   text-decoration: none;
-  font-size: 14px;
+  font-size: 0.9em;
   display: block;
 }
 
 ul#menu li a {
   padding: 7px 30px;
+}
+
+ul#menu li a i,
+ul#menu li a img {
+  margin-left: 0.3em;
 }
 
 .sidenav .closebtn {
@@ -409,11 +459,11 @@ ul#menu li a {
   margin-bottom: 60px;
 }
 
-#mysidenav img {
-  width: 200px;
+#mysidenav .nav-logo {
+  width: 166px;
   height: 76px;
   display: block;
-  margin: 1em 0.5em 1em 0;
+  margin: 0em 0.5em 1em 0;
 }
 
 body {
@@ -712,8 +762,7 @@ a.active {
 }
 
 /* 05.   Massage Box */
-.contact_massage,
-.toggle-menu {
+.contact_massage {
   content: '';
   position: fixed;
   top: 20px;
@@ -734,8 +783,7 @@ a.active {
   background: #ff9100 !important;
 }
 
-.contact_massage a,
-.toggle-menu a {
+.contact_massage a {
   font-size: 24px;
   line-height: 60px;
   display: block;
@@ -744,11 +792,6 @@ a.active {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   text-align: center;
   margin-bottom: 0.1em;
-}
-
-.toggle-menu {
-  border-radius: 50% 0 0 50%;
-  right: 0;
 }
 
 /*====================================================================
