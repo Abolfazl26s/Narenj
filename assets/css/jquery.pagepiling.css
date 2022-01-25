@@ -41,6 +41,7 @@ body {
   margin-top: -32px;
   top: 50%;
   opacity: 1;
+  right: 10px !important;
 }
 
 #pp-nav.right {
