@@ -5,16 +5,13 @@
     <!--===== Meta Tag =====-->
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="Runaway - Personal Portfolio HTML Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords"
-        content="business, agency, blog, cv, creative, html, one page, personal, portfolio, resume, responsive, bootstrap, photography, designer, developer">
-    <meta name="author" content="root">
+
 
     <!--	Css Links
     ==================================================-->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/jquery.pagepiling.css">
+    <link rel="stylesheet" href="./assets/css/jquery.pagepiling.min.css">
     <link rel="stylesheet" href="./assets/css/all.css" />
     <link rel="stylesheet" href="./assets/fonts/flaticon.css">
     <link rel="stylesheet" href="./assets/css/plugins.css">
@@ -164,7 +161,7 @@
 		===================================================-->
         <div id="about" class="section bg-white pp-scrollable md_pr_80">
             <section class="iq-works main-bg position-relative my_60" style="background: #7c60d5;">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-12 text-center">
                             <div class="section-title">
@@ -332,6 +329,7 @@
         //=====================================================
         $(document).ready(function () {
             let page1 = "خانه";
+
             $('#pagepiling').pagepiling({
                 menu: '#menu',
                 anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9'],
@@ -340,7 +338,7 @@
                 navigation: {
                     'textColor': '#fff',
                     'bulletsColor': '#000',
-                    'position': 'right',
+                    'position': 'left',
                     'tooltips': [page1, 'درباره ما']
                 },
             });
@@ -349,14 +347,20 @@
                 e.preventDefault();
                 $(".sidenav").toggleClass("activeMenu");
                 $(this).toggleClass("activeToggleMenu");
-                $(".toggle-menu").find("fa fa-bars").replaceWith("fa-regular fa-arrow-right-from-bracket");
+                $("i", this).toggleClass("fa-bars fa-sign-in-alt");
             });
 
             $("#menu li a").click(function () {
                 $(".toggle-menu").toggleClass("activeToggleMenu");
                 $(".sidenav").toggleClass("activeMenu");
+                $(".toggle-menu i").toggleClass("fa-bars fa-sign-in-alt");
             });
 
+            $(window).on("load", function () {
+                let url = window.location.href;
+                $(window.location).replace(url);
+
+            });
 
         });
         //	Sidebar Nav Menu js

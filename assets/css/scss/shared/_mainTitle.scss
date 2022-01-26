@@ -62,8 +62,8 @@
 .pp-slidesNav span {
   top: 2px;
   left: 2px;
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   border: 2px solid;
   border-radius: 50%;
   position: absolute;
@@ -77,8 +77,8 @@
 #pp-nav li .active span:before {
   content: '';
   position: absolute;
-  width: 24px;
-  height: 24px;
+  width: 14px;
+  height: 14px;
   top: -4px;
   left: -4px;
   border-radius: 100%;
@@ -86,9 +86,11 @@
 }
 
 .pp-tooltip {
-  font-size: 1.2em;
+  font-size: 1em;
   background-color: #95bb2f;
   padding: 0.2em 1em;
+
+  font-family: var(--primary-fonts) !important;
 }
 
 .widget_title {
