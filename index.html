@@ -35,7 +35,7 @@
 
 <body id="top" class="page-load">
     <!--	Preloader ================================-->
-    <div class="preloader d-none">
+    <div class="preloader">
         <div class="lds-css ng-scope">
             <div class="lds-spinner" style="width:100%;height:100%">
                 <div></div>
@@ -331,6 +331,7 @@
         //	Pagepiling js
         //=====================================================
         $(document).ready(function () {
+            let page1 = "خانه";
             $('#pagepiling').pagepiling({
                 menu: '#menu',
                 anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9'],
@@ -340,7 +341,7 @@
                     'textColor': '#fff',
                     'bulletsColor': '#000',
                     'position': 'right',
-                    'tooltips': ['خانه', 'درباره ما']
+                    'tooltips': [page1, 'درباره ما']
                 },
             });
 
