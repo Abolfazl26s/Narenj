@@ -1,0 +1,74 @@
+/* Home
+	 * --------------------------------------- */
+.section {
+  background: #f1f1f1;
+  padding: 0 !important;
+  margin: 0 !important;
+  min-height: 100vh;
+  
+}
+
+/* Overwriting fullPage.js tooltip color
+* --------------------------------------- */
+
+#pp-nav.custom .pp-tooltip {
+  color: #333 !important;
+  z-index: 998;
+}
+
+#pp-nav {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.pp-tooltip {
+  padding: 0.2em 0.5em;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+#pp-nav span,
+.pp-slidesNav span {
+  top: 2px;
+  left: 2px;
+  width: 8px;
+  height: 8px;
+  border: none;
+  background: #ffc39e;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+}
+
+#pp-nav li .active span,
+.pp-slidesNav .active span {
+  background: #ff7e62;
+  border: none;
+  transform: scale(2);
+}
+
+#markup {
+  display: block;
+  width: 450px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+// Speed Page
+.pp-easing {
+  -webkit-transition: all 1500ms cubic-bezier(0.55, 0.085, 0, 0.99);
+  -moz-transition: all 1500ms cubic-bezier(0.55, 0.085, 0, 0.99);
+  -o-transition: all 1500ms cubic-bezier(0.55, 0.085, 0, 0.99);
+  transition: all 1500ms cubic-bezier(0.55, 0.085, 0, 0.99);
+  /* custom */
+  -webkit-transition-timing-function: cubic-bezier(0.55, 0.085, 0, 0.99);
+  -moz-transition-timing-function: cubic-bezier(0.55, 0.085, 0, 0.99);
+  -o-transition-timing-function: cubic-bezier(0.55, 0.085, 0, 0.99);
+  transition-timing-function: cubic-bezier(0.55, 0.085, 0, 0.99);
+  /* custom */
+}

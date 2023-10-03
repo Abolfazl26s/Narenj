@@ -1,0 +1,130 @@
+/*==================================================================================
+09.   Side Nav menu
+====================================================================================*/
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 100;
+  padding: 30px 20px;
+}
+
+.sidenav {
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  transform: translate(100%, -100%);
+  transition: transform 0.4s ease-in-out;
+
+  ul {
+    padding: 0;
+    padding-top: 1em;
+    li {
+      list-style: none;
+      margin-bottom: 0.7em;
+      a {
+        font-size: 1em;
+      }
+
+      &:hover {
+        a {
+          color: $main-color !important;
+        }
+      }
+
+      &.active {
+        background: $main-color;
+        box-shadow: 0 4px 20px 0 rgba(31, 38, 135, 0.37);
+        a {
+          color: rgb(255, 255, 255);
+        }
+        border-radius: 2em 0 0 2em;
+      }
+    }
+  }
+}
+
+.activeMenu {
+  transform: translate(0);
+}
+
+.activeToggleMenu {
+  right: 250px !important;
+  z-index: 998 !important;
+}
+.toggle-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 20px;
+  right: 0px;
+  width: 60px;
+  height: 60px;
+  background: $main-color;
+  z-index: 1000;
+  border-radius: 50% 0 0 50%;
+  transition: right 0.4s cubic-bezier(0.78, 0.19, 0.37, 1.44);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  i {
+    padding: 0 !important;
+    margin: 0% !important;
+    text-shadow: 0 2px 4px rgba($color: #000000, $alpha: 1);
+    cursor: pointer;
+  }
+}
+
+.sidenav a {
+  text-decoration: none;
+  font-size: 0.9em;
+  display: block;
+}
+
+ul#menu li a {
+  padding: 7px 10px;
+}
+
+ul#menu li a {
+  i,
+  img {
+    margin-left: 0.3em;
+  }
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 36px;
+}
+
+.sidebar span {
+  font-size: 36px;
+  display: block;
+  text-align: center;
+}
+
+.sidebar img {
+  margin-bottom: 60px;
+}
+
+#mysidenav .nav-logo {
+  width: 166px;
+  height: 76px;
+  display: block;
+  margin: 0em 0.5em 1em 0;
+}

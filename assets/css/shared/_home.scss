@@ -1,0 +1,308 @@
+#home {
+  overflow-x: hidden !important;
+  $sizeCircle: 7vw;
+  $gap: 1em;
+  $fadeSize: 2vw;
+  $shapeCenterSize: 3vw;
+  $Ratio: 4;
+  $color-1: #f29400;
+  $color-2: #f58220;
+  $color-3: #eb6909;
+  $color-4: #e75012;
+  $color-darkBlue: #528095;
+  $color-lightBlue: #12b3bc;
+  $textColor-3: #f58220;
+  background: #5d5d5d;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+
+  .color-1 {
+    background: $color-1 !important;
+  }
+
+  .textColor-3 {
+    color: $textColor-3;
+  }
+
+  .color-2 {
+    background: $color-2 !important;
+  }
+
+  .color-3 {
+    background: $color-3 !important;
+  }
+
+  .color-4 {
+    background: $color-4 !important;
+  }
+  .color-lightBlue {
+    background: $color-lightBlue !important;
+  }
+  .color-darkBlue {
+    background: $color-darkBlue !important;
+  }
+
+  .hidden {
+    visibility: hidden !important;
+  }
+
+  .introCircle {
+    position: relative;
+    background: transparent !important;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: $sizeCircle/$Ratio;
+      height: $sizeCircle/$Ratio;
+      border-radius: 50%;
+      background: var(--bg-introCircle) !important;
+      animation: scaleCircle var(--name) infinite linear;
+    }
+
+    @keyframes scaleCircle {
+      0% {
+        width: $sizeCircle/$Ratio;
+        height: $sizeCircle/$Ratio;
+      }
+      50% {
+        width: $sizeCircle/10;
+        height: $sizeCircle/10;
+      }
+      100% {
+        width: $sizeCircle/$Ratio;
+        height: $sizeCircle/$Ratio;
+      }
+    }
+
+    @keyframes reverce {
+      100% {
+        width: $sizeCircle/$Ratio;
+        height: $sizeCircle/$Ratio;
+      }
+      50% {
+        width: $sizeCircle/10;
+        height: $sizeCircle/10;
+      }
+      0% {
+        width: $sizeCircle/$Ratio;
+        height: $sizeCircle/$Ratio;
+      }
+    }
+  }
+
+  .logoCircle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 0 0.8em #f29400, inset 0 0 0 1.2em #ee7f01,
+      inset 0 0 0 1.7em #eb6909, inset 0 0px 0 2.2em #e75012;
+    background: #fff !important;
+    .shape {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      width: 3.5vw;
+      height: 3.5vw;
+      background: url('/assets/img/slider/centerShapeLogo.png') no-repeat center
+        center/contain;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: -40%;
+      background: #ee7f01;
+      width: $fadeSize;
+      height: $fadeSize;
+      border-radius: $fadeSize 0;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -45%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 4vw;
+      height: 3.5vw;
+      background: url('/assets/img/slider/textLogo.png') no-repeat center
+        center/contain;
+    }
+  }
+
+  .fadeShape {
+    content: '';
+    position: absolute;
+    top: var(--top);
+    width: $fadeSize;
+    height: $fadeSize;
+    left: var(--left);
+    transform: rotate(var(--deg));
+    border-radius: $fadeSize 0;
+    background: #fff;
+    z-index: 2;
+    // animation: fade 2s infinite linear;
+  }
+
+  @keyframes fade {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .home-slides {
+    .owl-dots {
+      display: none;
+    }
+  }
+  .slideOne,
+  .slideTwo,
+  .slideThree {
+    background: #5d5d5d;
+    .rightSide,
+    .leftSide {
+      min-height: 100vh;
+      display: flex;
+      align-items: initial;
+      justify-content: space-evenly;
+      flex-direction: column;
+      .row {
+        justify-content: space-between;
+        align-items: center;
+        .circle-shape {
+          position: relative;
+          width: $sizeCircle;
+          height: $sizeCircle;
+          background: $color-1;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  .slideTwo {
+    .titleInSlide {
+      background: transparent !important;
+      text-align: justify;
+
+      h1 {
+        font-size: 2.6vw;
+        font-weight: bolder !important;
+        line-height: 1.5em;
+        text-align: justify;
+        strong {
+          span {
+            letter-spacing: 0.1em;
+          }
+        }
+      }
+    }
+  }
+
+  .slideThree {
+    .textInSLide {
+      p {
+        letter-spacing: 0ch;
+        word-spacing: normal;
+        font-weight: 100;
+        font-size: 1.5vw;
+        text-align: justify;
+        text-justify: inter-word;
+        padding-right: 1em;
+        line-height: 1.8em;
+        color: #fff !important;
+      }
+    }
+  }
+
+  .carousel-indicators {
+    z-index: 999;
+    button {
+      content: '1';
+      width: 1em;
+      margin: 1em;
+      &.active {
+        color: #f29400 !important;
+      }
+    }
+  }
+
+  .leftSide {
+    justify-content: space-evenly !important;
+  }
+
+  @media (max-width: 992px) {
+    .slideOne {
+      .leftSide {
+        display: none;
+      }
+    }
+
+    .slideTwo,
+    .slideThree {
+      .rightSide {
+        display: none;
+      }
+      .titleInSlide {
+        h1 {
+          font-size: 5vw !important;
+        }
+      }
+      .textInSLide {
+        padding-top: 4em !important;
+        p {
+          font-size: 4vw;
+        }
+      }
+    }
+
+    .slideOne,
+    .slideTwo,
+    .slideThree {
+      .circle-shape {
+        width: 15vw !important;
+        height: 15vw !important;
+      }
+
+      .fadeShape {
+        width: 4vw;
+        height: 4vw;
+        border-radius: 4vw 0;
+      }
+
+      .rightSide,
+      .leftSide {
+        justify-content: space-evenly;
+      }
+
+      .logoCircle {
+        .shape {
+          width: 6vw !important;
+          height: 6vw !important;
+        }
+
+        &::after {
+          width: 4vw;
+          height: 4vw;
+          border-radius: 4vw 0;
+        }
+
+        &::before {
+          width: 7vw;
+          height: 7vw;
+        }
+      }
+    }
+  }
+}

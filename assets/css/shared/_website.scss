@@ -1,0 +1,20 @@
+#websiteAndApplication {
+  .tabs {
+    li {
+      &.current,
+      &:hover {
+        svg {
+          path {
+            fill: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  // ***********************************
+
+  .descriptionWork {
+    display: none;
+  }
+}
